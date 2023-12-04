@@ -1,0 +1,13 @@
+$colors: (
+    Violet: $violetColor,
+    Purple: $purpleColor,
+    SkyBlue: $skyBlueColor,
+    Pink: $pinkColor,
+    Yellow: $yellowColor
+);
+
+@each $color, $var in $colors {
+    .color#{$color} {
+        color: $var;
+    }
+}

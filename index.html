@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>TaskSwift</title>
+        <link rel="shortcut icon" href="./assets/icon.png" type="image/png">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="./js/app.js" defer></script>
+    </head>
+    <body>
+        <main class="container">
+            <nav class="navBar">
+                <div class="containerUser">
+                    <img src="./assets/userIcon.png" alt="Icon user" id="iconUser">
+                    <div class="user">
+                        <p>Do - It</p>
+                        <h4 id="userName">User0120145</h4>
+                    </div>
+                </div>
+                <hr class="divLine">
+                <div class="navBarLinks">
+                    <ul class="listNav">
+                        <li class="listItem">                            
+                            <span id="todayTasks"><i class='bx bx-calendar-alt'></i>Today's tasks</span>
+                            <ul class="listNav">
+                                <li class="listItem">
+                                    <span class="marginNav" id="tagPersonal"><i class='bx bxs-circle colorPink'></i>Personal</span>
+                                </li>
+                                <li class="listItem">
+                                    <span class="marginNav" id="tagLeisure"><i class='bx bxs-circle colorSkyBlue'></i>Leisure</span>
+                                </li>
+                                <li class="listItem">
+                                    <span class="marginNav" id="tagWork"><i class='bx bxs-circle colorYellow'></i>Work</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="listItem">
+                            <span id="tasks"><i class='bx bx-calendar-event'></i>Scheduled tasks</span>
+                        </li>
+                        <li class="listItem">                            
+                            <span id="settings"><i class='bx bx-cog'></i>Settings</span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </main>
+        <footer>
+            <p>Copyright &copy; - 2023</p>
+        </footer>
+    </body>
+</html>
