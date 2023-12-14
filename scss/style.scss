@@ -7,7 +7,17 @@ body {
     font-family: $principalFont;
     color: $greyColor;    
     font-weight: 700;
-    padding: 5px;
+    padding: 20px 100px 0 100px;
+}
+
+.personal {
+    color: $pinkColor;
+}
+.work {
+    color: $yellowColor;
+}
+.leisure {
+    color: $skyBlueColor;
 }
 
 main {
@@ -45,11 +55,14 @@ main {
                 padding: 3px;
 
                 p {
-                    margin: 2px 0;
-                    padding: 5px 2px;
+                    font-size: 14px;
+                    margin: 1px 0;
+                    padding: 0 2px;
                 }
 
                 h4 {
+                    font-style: italic;
+                    color: $violetColor;
                     margin: 2px 0;
                     padding: 5px 2px;
                 }
@@ -71,7 +84,7 @@ main {
                 justify-content: space-between;
                 .listItem {
                     list-style: none;
-                    margin: 15px 0;
+                    margin: 10px 0;
                     .marginNav {
                         margin-left: 50px;
                     }
@@ -95,7 +108,6 @@ main {
         align-items: center;
         width: 75%;
         margin: 0;
-        text-align: center;
         background-color: $violetColor;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
@@ -103,9 +115,176 @@ main {
             background-color: $whiteColor;
             width: 80%;
             height: 80%;
+            padding: 20px;
             border-radius: 30px;
+            overflow-y: auto;
+            h4 {
+                display: flex;
+                align-items: center;
+                margin: 0;
+                font-size: 18px;
+                color: $purpleColor;
+                i {
+                    font-size: 30px;
+                    margin-right: 10px;
+                }
+            }
+            hr {
+                height: 3px;
+                border: none;
+                background-color: $purpleColor;
+            }
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 5px 0;
+                    padding: 6px;
+                    cursor: pointer;
+                    i {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+        .containerCreateTask {
+            display: flex;
+            justify-content: center;
+            width: 80%;
+            height: 80%;
+            padding: 20px;
+            border-radius: 30px;
+            overflow-y: auto;
+            form {
+                background-color: $whiteColor;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 90%;
+                height: 50px;
+                padding: 0 15px;
+                border-radius: 18px;
+                .optionTask {
+                    input {
+                        display: none;
+                        &:checked + label .radio-button::after {
+                            top:0;
+                            left:0;
+                            transform: translate(0, 0);
+                            transform: scale(1.2);
+                        }
+                    }
+                    .colorPC::after {
+                        background-color:  $pinkColor;
+                    }
+                    .colorLC::after {
+                        background-color: $skyBlueColor;
+                    }
+                    .colorWC::after {
+                        background-color:  $yellowColor;
+                    }
+                    .radio-button {
+                        margin: 4px;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        display: inline-block;
+                        cursor:pointer;
+                        position: relative;
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;    
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            opacity: 1;
+                            transition: .3s;
+                        }
+                    }
+                }
+                .inTask {
+                    background-color: $whiteColor;
+                    width: 70%;
+                    height: 80%;
+                    outline: none;
+                    border: none;
+                }
+                .dateTask {
+                    background-color: $whiteColor;
+                    border: none;
+                    font-size: 18px;
+                    width: 25px;
+                    padding: 0;
+                    outline: none;
+                    color: $purpleColor;
+                }
+                .btn {
+                    background-color: transparent;
+                    border: none;
+                    font-size: 25px;
+                    color: $purpleColor;
+                    cursor: pointer;
+                }
+            }
+        }
+        .containerschTasks {
+            width: 80%;
+            height: 80%;
+            padding: 5px;
+            overflow-y: auto;
+            h3{
+                padding: 5px;
+                margin: 20px 5px;
+                color: $whiteColor;
+                font-size: 25px;
+            } 
+            ul {
+                list-style: none;
+                margin-top: 20px ;
+                h3{
+                    padding: 5px;
+                    margin: 20px 5px;
+                    color: $whiteColor;
+                    font-size: 25px;
+                }
+                li {
+                    background-color: $whiteColor;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 90%;
+                    height: 50px;
+                    padding: 0 25px;
+                    margin: 10px 0;
+                    font-size: 18px;
+                    font-weight: 500;
+                    font-style: italic;
+                    border-radius: 18px;
+                    i:nth-child(2) {
+                        font-size: 21px;                            
+                        cursor: pointer;
+                    }
+                    span {
+                        display: flex;
+                        align-items: center;
+                    p{
+                        display: inline;
+                        margin-left: 15px;
+                    }
+
+                    
+                }
+            }
         }
     }
+}
 }
 footer {
     margin: 0;

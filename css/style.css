@@ -147,7 +147,19 @@ body {
   font-family: "Montserrat", sans-serif;
   color: #717082;
   font-weight: 700;
-  padding: 5px;
+  padding: 20px 100px 0 100px;
+}
+
+.personal {
+  color: #FD99AF;
+}
+
+.work {
+  color: #FAC608;
+}
+
+.leisure {
+  color: #3FD4F4;
 }
 
 main {
@@ -184,10 +196,13 @@ main .navBar .containerUser .user {
   padding: 3px;
 }
 main .navBar .containerUser .user p {
-  margin: 2px 0;
-  padding: 5px 2px;
+  font-size: 14px;
+  margin: 1px 0;
+  padding: 0 2px;
 }
 main .navBar .containerUser .user h4 {
+  font-style: italic;
+  color: #8d78dd;
   margin: 2px 0;
   padding: 5px 2px;
 }
@@ -205,7 +220,7 @@ main .navBar .navBarLinks .listNav {
 }
 main .navBar .navBarLinks .listNav .listItem {
   list-style: none;
-  margin: 15px 0;
+  margin: 10px 0;
 }
 main .navBar .navBarLinks .listNav .listItem .marginNav {
   margin-left: 50px;
@@ -226,16 +241,178 @@ main section {
   align-items: center;
   width: 75%;
   margin: 0;
-  text-align: center;
   background-color: #8d78dd;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-main section div {
+main section .containerSettings {
   background-color: #F6F6F6;
   width: 80%;
   height: 80%;
+  padding: 20px;
   border-radius: 30px;
+  overflow-y: auto;
+}
+main section .containerSettings h4 {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 18px;
+  color: #CA8BFE;
+}
+main section .containerSettings h4 i {
+  font-size: 30px;
+  margin-right: 10px;
+}
+main section .containerSettings hr {
+  height: 3px;
+  border: none;
+  background-color: #CA8BFE;
+}
+main section .containerSettings ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+main section .containerSettings ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+  padding: 6px;
+  cursor: pointer;
+}
+main section .containerSettings ul li i {
+  font-size: 25px;
+}
+main section .containerCreateTask {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 80%;
+  padding: 20px;
+  border-radius: 30px;
+  overflow-y: auto;
+}
+main section .containerCreateTask form {
+  background-color: #F6F6F6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 50px;
+  padding: 0 15px;
+  border-radius: 18px;
+}
+main section .containerCreateTask form .optionTask input {
+  display: none;
+}
+main section .containerCreateTask form .optionTask input:checked + label .radio-button::after {
+  top: 0;
+  left: 0;
+  transform: translate(0, 0);
+  transform: scale(1.2);
+}
+main section .containerCreateTask form .optionTask .colorPC::after {
+  background-color: #FD99AF;
+}
+main section .containerCreateTask form .optionTask .colorLC::after {
+  background-color: #3FD4F4;
+}
+main section .containerCreateTask form .optionTask .colorWC::after {
+  background-color: #FAC608;
+}
+main section .containerCreateTask form .optionTask .radio-button {
+  margin: 4px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+main section .containerCreateTask form .optionTask .radio-button::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: 0.3s;
+}
+main section .containerCreateTask form .inTask {
+  background-color: #F6F6F6;
+  width: 70%;
+  height: 80%;
+  outline: none;
+  border: none;
+}
+main section .containerCreateTask form .dateTask {
+  background-color: #F6F6F6;
+  border: none;
+  font-size: 18px;
+  width: 25px;
+  padding: 0;
+  outline: none;
+  color: #CA8BFE;
+}
+main section .containerCreateTask form .btn {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  color: #CA8BFE;
+  cursor: pointer;
+}
+main section .containerschTasks {
+  width: 80%;
+  height: 80%;
+  padding: 5px;
+  overflow-y: auto;
+}
+main section .containerschTasks h3 {
+  padding: 5px;
+  margin: 20px 5px;
+  color: #F6F6F6;
+  font-size: 25px;
+}
+main section .containerschTasks ul {
+  list-style: none;
+  margin-top: 20px;
+}
+main section .containerschTasks ul h3 {
+  padding: 5px;
+  margin: 20px 5px;
+  color: #F6F6F6;
+  font-size: 25px;
+}
+main section .containerschTasks ul li {
+  background-color: #F6F6F6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 50px;
+  padding: 0 25px;
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: italic;
+  border-radius: 18px;
+}
+main section .containerschTasks ul li i:nth-child(2) {
+  font-size: 21px;
+  cursor: pointer;
+}
+main section .containerschTasks ul li span {
+  display: flex;
+  align-items: center;
+}
+main section .containerschTasks ul li span p {
+  display: inline;
+  margin-left: 15px;
 }
 
 footer {

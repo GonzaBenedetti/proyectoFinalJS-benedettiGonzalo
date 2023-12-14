@@ -1,0 +1,22 @@
+[
+    { "id": 1, "title": "Hacer la compra", "description": "personal", "date": "2023-12-15" },
+    { "id": 2, "title": "Estudiar JavaScript", "description": "work", "date": "2023-12-16" },
+    { "id": 3, "title": "Hacer ejercicio", "description": "personal", "date": "2023-12-16" },
+    { "id": 4, "title": "Preparar presentación", "description": "work", "date": "2023-12-17" },
+    { "id": 5, "title": "Llamada con el cliente", "description": "work", "date": "2023-12-17" },
+    { "id": 6, "title": "Completar informe", "description": "work", "date": "2023-12-18" },
+    { "id": 7, "title": "Planificar vacaciones", "description": "leisure", "date": "2023-12-18" },
+    { "id": 8, "title": "Enviar correo electrónico", "description": "work", "date": "2023-12-19" },
+    { "id": 9, "title": "Revisar CV", "description": "work", "date": "2023-12-19" },
+    { "id": 10, "title": "Comida con amigos", "description": "leisure", "date": "2023-12-20" },
+    { "id": 11, "title": "Completar tarea pendiente", "description": "work", "date": "2023-12-20" },
+    { "id": 12, "title": "Establecer metas para el próximo año", "description": "personal", "date": "2023-12-21" },
+    { "id": 13, "title": "Reunión de equipo", "description": "work", "date": "2023-12-21" },
+    { "id": 14, "title": "Leer libro recomendado", "description": "leisure", "date": "2023-12-22" },
+    { "id": 15, "title": "Preparar cena especial", "description": "leisure", "date": "2023-12-22" },
+    { "id": 16, "title": "Entrenamiento matutino", "description": "personal", "date": "2023-12-23" },
+    { "id": 17, "title": "Actualizar software", "description": "work", "date": "2023-12-23" },
+    { "id": 18, "title": "Visitar museo", "description": "leisure", "date": "2023-12-24" },
+    { "id": 19, "title": "Conectar con colegas", "description": "work", "date": "2023-12-24" },
+    { "id": 20, "title": "Reflexionar sobre el día", "description": "personal", "date": "2023-12-25" }
+]
